@@ -34,6 +34,7 @@ export const ThemePerColumn: React.VFC = () => {
             ...c[3],
             themeOverride: {
                 textDark: "#009CA6",
+                bgCell: "#009CA620",
                 bgIconHeader: "#009CA6",
                 accentColor: "#009CA6",
                 accentLight: "#009CA620",
@@ -45,6 +46,7 @@ export const ThemePerColumn: React.VFC = () => {
             ...c[4],
             themeOverride: {
                 textDark: "#009CA6",
+                bgCell: "#009CA620",
                 bgIconHeader: "#009CA6",
                 accentColor: "#009CA6",
                 accentLight: "#009CA620",
@@ -56,6 +58,7 @@ export const ThemePerColumn: React.VFC = () => {
             ...c[9],
             themeOverride: {
                 textDark: "#009CA6",
+                bgCell: "#009CA6",
                 bgIconHeader: "#009CA6",
                 accentColor: "#009CA6",
                 accentLight: "#009CA620",
@@ -66,6 +69,7 @@ export const ThemePerColumn: React.VFC = () => {
             ...c[10],
             themeOverride: {
                 textDark: "#009CA6",
+                bgCell: "#009CA6",
                 bgIconHeader: "#009CA6",
                 accentColor: "#009CA6",
                 accentLight: "#009CA620",
@@ -82,7 +86,8 @@ export const ThemePerColumn: React.VFC = () => {
             columns={realCols}
             onCellEdited={setCellValue}
             onColumnResize={onColumnResize}
-            rows={1000}
+            rows={10}
+            height="100%"
         />
     );
 };
